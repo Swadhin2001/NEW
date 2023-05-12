@@ -1,0 +1,39 @@
+.container{
+    width:200px;
+    height: 200px;
+    margin: 100px;
+    perspective: 1500px;
+}
+img{
+    border-radius: 4vh;
+}
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms ;
+    transform-style: preserve-3d;
+}
+.container:hover > .card{
+    cursor: pointer;
+    transform:rotateY(180deg);
+}
+.front,.back{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front{
+    object-fit: cover;
+    background-color: red;
+}
+.back{
+    background-color: #61a4db;
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
