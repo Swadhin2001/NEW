@@ -1,7 +1,7 @@
 import React from 'react'
-import background from '../Assets/Background.jpg'
-import '../CSS/vitalities.css'
-function Vitalities() {
+import background from '../Assets/Image_1.jpg'
+import '../CSS/Vitality.css'
+function Vitality() {
     return (
         <>
             <div style={{ 
@@ -13,8 +13,8 @@ function Vitalities() {
                 alignItems:"center",
                 margin: "auto" }}>
                 <div className="description" >
-                    <h1 style={{ textAlign: "center", marginBottom:"80px" }}>Vitalities</h1>
-                    <p>Certainly! Here are some additional vitalities you might find on a healthcare website that focuses on nutrition, healthy eating, and BMI calculations:
+                    <h1 style={{ textAlign: "center", marginBottom:"80px" }}>Vitality</h1>
+                    <p>Certainly! Here are some additional Vitality you might find on a healthcare website that focuses on nutrition, healthy eating, and BMI calculations:
                     </p>
                     <ul >
                         <li><h4>Food Charts and Nutritional Information :</h4><p> The website may provide charts or databases that offer nutritional information 	about various foods. This can include details such as calorie counts, macronutrient breakdowns, vitamin and mineral content, and allergen information. Such resources can help users make informed decisions about their dietary choices.</p></li>
@@ -33,11 +33,11 @@ function Vitalities() {
 
                         <li><h4>Blog or Articles on Nutrition and Healthy Eating :</h4><p> The healthcare website might have a dedicated blog section or articles that cover topics related to nutrition, healthy eating, and lifestyle choices. These resources can offer insights, tips, and evidence-based information to support users in making informed decisions about their diet.</p></li>
                     </ul>
-                    <p>Remember, the specific features and functionalities can vary across different healthcare websites. The vitalities mentioned here provide a general idea of what you might find on a healthcare website focused on nutrition and healthy eating.</p>
+                    <p>Remember, the specific features and functionalities can vary across different healthcare websites. The Vitality mentioned here provide a general idea of what you might find on a healthcare website focused on nutrition and healthy eating.</p>
                 </div>
             </div>
         </>
     )
 }
 
-export default Vitalities
+export default Vitality
