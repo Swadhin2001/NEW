@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../Components/Card';
-import background from '../Assets/Image_2.jpg'
-function Recommendation() {
+
+const Recommendations = () => {
     const [recommendation, setRecommendation] = useState([]);
 
     useEffect(() => {
@@ -9,23 +9,16 @@ function Recommendation() {
     }, []);
 
     const Recommendation = async () => {
-        try{
+        const api = await fetch(`https://api.spoonacular.com/recipes/random?number=15&apiKey=5b1fe8d634e547b5850d2a2d79614a9d`);
 
-            const api = await fetch(`https://api.spoonacular.com/recipes/random?number=12&apiKey=5b1fe8d634e547b5850d2a2d79614a9d`);
-    
-            const data = await api.json();
-            console.log(data);
-            setRecommendation(data.recipes);
-        }
-        catch(e){
-            console.log(e);
-        }
+        const data = await api.json();
+        console.log(data);
+        setRecommendation(data.recipes);
     }
 
     return (
         <>
-        <div style={{backgroundImage: `url(${background})`,backgroundRepeat: 'no-repeat',backgroundSize: "cover"}}>
-            <h1 style={{ textAlign: "center", padding: "40px", fontWeight: "bolder",color:"white" }}> Recommendation</h1>
+            <h1 style={{ textAlign: "center", padding: "40px", fontWeight: "bolder" }}> Recommendation</h1>
             <div className="card-group">
                 {
                     recommendation.map((recipe) => {
@@ -40,9 +33,8 @@ function Recommendation() {
                     })
                 }
             </div>
-        </div>
         </>
     )
 }
 
-export default Recommendation
+export default Recommendations;

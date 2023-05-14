@@ -1,5 +1,6 @@
-import React from 'react'
-import '../CSS/card.css'
+import React from 'react';
+import '../CSS/Card.css';
+
 const Card = (props) => {
   const html = props.summary;
   const obj = { __html: html };

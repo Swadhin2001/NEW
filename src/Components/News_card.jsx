@@ -9,7 +9,7 @@ function News_card(props) {
                 <h5 className ="card-title">{props.title}</h5>
                 <p className ="card-text">{props.description}</p>
                 <div className="d-grid gap-2">
-                  <a href={props.link} className="btn btn-outline-info" target="_blank">Read More</a>
+                  <button href={props.link} className="btn btn-outline-info" target="_blank">Read More</button>
                 </div>
             </div>
           </div>
