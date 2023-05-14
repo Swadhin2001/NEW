@@ -21,7 +21,7 @@ const NavGraph = () => {
             <Link to="/Calculator" className='calculator link'>
                 <img src={Calculator} alt = "Calculator Button" className='blue btn' />
             </Link>
-            <Link to="/Vitalities" className='vitality link'>
+            <Link to="/Vitality" className='vitality link'>
                 <img src={Vitality} alt = "Vitality Button" className='green btn' />
             </Link>
             <Link to="/Insights" className='insights link'>
