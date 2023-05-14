@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../Components/Card';
+import background from '../Assets/Image_2.jpg'
 function Recommendation() {
     const [recommendation, setRecommendation] = useState([]);
 
@@ -17,7 +18,8 @@ function Recommendation() {
 
     return (
         <>
-            <h1 style={{ textAlign: "center", padding: "40px", fontWeight: "bolder" }}> Recommendation</h1>
+        <div style={{backgroundImage: `url(${background})`,backgroundRepeat: 'no-repeat',backgroundSize: "cover"}}>
+            <h1 style={{ textAlign: "center", padding: "40px", fontWeight: "bolder",color:"white" }}> Recommendation</h1>
             <div className="card-group">
                 {
                     recommendation.map((recipe) => {
@@ -32,6 +34,7 @@ function Recommendation() {
                     })
                 }
             </div>
+        </div>
         </>
     )
 }

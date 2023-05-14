@@ -8,7 +8,9 @@ function News_card(props) {
             <div className ="card-body">
                 <h5 className ="card-title">{props.title}</h5>
                 <p className ="card-text">{props.description}</p>
-                <a href={props.link} className="btn btn-primary" target="_blank">Read More</a>
+                <div className="d-grid gap-2">
+                  <button href={props.link} className="btn btn-outline-info" target="_blank">Read More</button>
+                </div>
             </div>
           </div>
       </div>

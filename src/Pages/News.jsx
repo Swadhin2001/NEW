@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import '../index.css'
 import News_card from '../Components/News_card.jsx'
+import background from '../Assets/Image_3.jpg'
+
 function News() {
   const [news,setNews] = useState([]);
 
@@ -17,18 +19,20 @@ function News() {
 
   return (
     <>
-    <h1 style ={{textAlign: "center", padding: "40px", fontWeight:"bolder"}}> News</h1>
-    <div className="container-sm-3 mx-5">
-        <div className="row ">
-            {
-                news.map((val,index)=>{
-                    return(
-                        <News_card image = {val.urlToImage} title = {val.title} description ={val.description} link = {val.url} key ={index}/>
-                    );
-                })
-            }
-            </div>
-        </div>
+    <div style={{backgroundImage: `url(${background})`,backgroundRepeat: 'no-repeat',backgroundSize: "cover"}}>
+      <h1 style ={{textAlign: "center", padding: "40px", fontWeight:"bolder",color: "white"}}> News</h1>
+      <div className="container-sm-3 mx-5">
+          <div className="row ">
+              {
+                  news.map((val,index)=>{
+                      return(
+                          <News_card image = {val.urlToImage} title = {val.title} description ={val.description} link = {val.url} key ={index}/>
+                      );
+                  })
+              }
+              </div>
+          </div>
+    </div>
     </>
   )
 }
