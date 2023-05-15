@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/Card.css';
+import '../CSS/FlipCard.css';
 
 const Card = (props) => {
   const html = props.summary;
