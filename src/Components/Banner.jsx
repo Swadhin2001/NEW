@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../CSS/Banner_new.css";
+import "../CSS/Banner.css";
 import Logo from "../Assets/App_Logo.png";
 import BannerImage from "../Assets/Banner.jpg";
 

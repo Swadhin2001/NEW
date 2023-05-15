@@ -1,35 +1,26 @@
-.header {
+.header{
     background: linear-gradient(90deg, rgb(60, 24, 157), purple);
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 60px;
 }
-.header img {
-    position: absolute;
-    top: 0.9%;
-    left: 1%;
-    height: 8%;
-    width: 5%;
-    border-bottom-right-radius: 38px;
+.header img{
+    padding: 1%;
 }
-
+.header h3{
+    color : white;
+}
 .banner img {
-    width: 96rem;
+    width: 100%;
     filter: contrast(130%) saturate(120%) brightness(80%);
-}
-.header h3 {
-    position: absolute;
-    top: 8px;
-    left: 80px;
-    color: bisque;
-    font-size: 240%;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
 }
 .banner {
     position: relative;
     overflow: hidden;
 }
-
+.banner h1{
+    font-weight: bolder;
+}
 .slogan_1, .slogan_2 {
     position: absolute; 
     width: 100%;
