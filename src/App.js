@@ -6,6 +6,7 @@ import Analyzer from './Pages/Analyzer.jsx';
 import Calculator from './Pages/Calculator.jsx';
 import Vitality from './Pages/Vitality.jsx';
 import Insights from './Pages/Insights.jsx';
+import Error from './Pages/Error.jsx';
 // import {BrowsesrRouter as Router, Routes} from 'react-router-dom';
 // import News from './Pages/Home.jsx';
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route exact path='/Calculator' Component={Calculator} />
           <Route exact path='/Vitality' Component={Vitality} />
           <Route exact path='/Insights' Component={Insights} />
+          <Route path="*" Component={Error} />
         </Routes>
       </Router>
     </>

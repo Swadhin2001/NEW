@@ -6,14 +6,14 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
-p,ul{
+.description p,ul{
     color: white;
 }
-h4{
+.description h4{
     font-weight: bold;
     color: rgb(255, 253, 253);
 }
-h1{
+.description h1{
     color: white;
     font-weight: bolder;
 }

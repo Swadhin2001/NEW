@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../Components/Card';
+import background from '../Assets/Image_2.jpg'
 
 const Recommendations = () => {
     const [recommendation, setRecommendation] = useState([]);
@@ -9,7 +10,7 @@ const Recommendations = () => {
     }, []);
 
     const Recommendation = async () => {
-        const api = await fetch(`https://api.spoonacular.com/recipes/random?number=15&apiKey=5b1fe8d634e547b5850d2a2d79614a9d`);
+        const api = await fetch(`https://api.spoonacular.com/recipes/random?number=9&apiKey=5b1fe8d634e547b5850d2a2d79614a9d`);
 
         const data = await api.json();
         console.log(data);
@@ -18,7 +19,8 @@ const Recommendations = () => {
 
     return (
         <>
-            <h1 style={{ textAlign: "center", padding: "40px", fontWeight: "bolder" }}> Recommendation</h1>
+        <div style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+            <h1 style={{ textAlign: "center", padding: "40px", fontWeight: "bolder", color: "white" }}> Recommendation</h1>
             <div className="card-group">
                 {
                     recommendation.map((recipe) => {
@@ -33,6 +35,7 @@ const Recommendations = () => {
                     })
                 }
             </div>
+        </div>
         </>
     )
 }
