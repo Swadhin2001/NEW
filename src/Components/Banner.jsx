@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../CSS/Banner.css";
+import "../CSS/Banner_new.css";
 import Logo from "../Assets/App_Logo.png";
 import BannerImage from "../Assets/Banner.jpg";
 
@@ -24,8 +24,9 @@ const Banner = () => {
 
     return (
         <>
-            <header className="header">
-                <img src={Logo} alt="Icon" />
+        <div className="Banner">
+            <header className="header" >
+                <img src={Logo} alt="Icon" style={{width: "6%"}}/>
                 <h3>Smart Calorie</h3>
             </header>
             <section className="banner">
@@ -35,6 +36,7 @@ const Banner = () => {
                 <h1 className={`slogan_2 ${showText2 ? 'showSecond' : ''}`}>
                     FEEL GOOD</h1>
             </section>
+        </div>
         </>
     )
 }
