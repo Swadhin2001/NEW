@@ -7,7 +7,7 @@ function Error() {
         <img src={background} alt="" />
     </div>
     <div className="d-grid gap-2 col-6 mx-auto">
-        <button type="button" class="btn btn-primary"><b>Back To Home</b></button>
+        <a href="/" class="btn btn-primary"><b>Back To Home</b></a>
     </div>
   </>
   )

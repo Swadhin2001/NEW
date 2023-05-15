@@ -1,5 +1,5 @@
 import React from 'react'
-function News_card(props) {
+function NewsCard(props) {
   return (
     <>
       <div className="col my-3">
@@ -9,7 +9,7 @@ function News_card(props) {
                 <h5 className ="card-title">{props.title}</h5>
                 <p className ="card-text">{props.description}</p>
                 <div className="d-grid gap-2">
-                  <button href={props.link} className="btn btn-outline-info" target="_blank">Read More</button>
+                  <a href={props.link} className="btn btn-outline-info" target="_blank" rel="noreferrer">Read More</a>
                 </div>
             </div>
           </div>
@@ -18,4 +18,4 @@ function News_card(props) {
   )
 }
 
-export default News_card
+export default NewsCard
