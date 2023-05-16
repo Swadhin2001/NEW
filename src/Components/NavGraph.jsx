@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import "../CSS/NavGraph.css";
+import "../CSS/navgraph.css";
 
 const NavGraph = () => {
     return (

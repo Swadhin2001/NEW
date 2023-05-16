@@ -1,6 +1,6 @@
 import React from 'react'
 import background from '../Assets/Image_1.jpg'
-import '../CSS/Vitality.css'
+import '../CSS/vitality.css'
 function Vitality() {
     return (
         <>
