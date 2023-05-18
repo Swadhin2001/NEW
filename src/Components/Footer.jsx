@@ -14,8 +14,7 @@ function Footer() {
       <div className="f-right">
         <div className="links">
           <a href="https://github.com/Swadhin2001" target="_blank" rel="noreferrer">swadhin &nbsp;|&nbsp;</a>
-          <a href="https://github.com/ATLAS2002" target="_blank" rel="noreferrer"> siddharth &nbsp;|&nbsp;</a>
-          <a href="https://github.com/aishikpatra7" target="_blank" rel="noreferrer"> aishik</a>
+          <a href="https://github.com/ATLAS2002" target="_blank" rel="noreferrer"> siddharth </a>
         </div>
       </div>
     </footer>
