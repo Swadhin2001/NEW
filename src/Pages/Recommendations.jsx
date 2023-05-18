@@ -10,8 +10,8 @@ const Recommendations = () => {
 
     const Recommendation = async () => {
         const api = await fetch(`https://api.spoonacular.com/recipes/random?number=8&apiKey=5b1fe8d634e547b5850d2a2d79614a9d`);
-
         const data = await api.json();
+        console.log (data.recipes);
         setRecommendation(data.recipes);
     }
 
@@ -25,8 +25,8 @@ const Recommendations = () => {
                         {
                             recommendation.map((recipe) => {
                                 return (
-                                    <div className="col my-5">
-                                        <div key={recipe.id}>
+                                    <div className="col my-5" key ={recipe.id}>
+                                        <div >
                                             <Cardflip image={recipe.image} title={recipe.title} summary={recipe.summary} />
                                         </div>
                                     </div>
