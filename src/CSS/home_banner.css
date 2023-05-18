@@ -1,0 +1,20 @@
+.body{
+    background-color: rgba(232, 255, 252, 0.555);
+}
+.home-body{
+    display: flex;
+    justify-content: space-around;
+}
+.body-para p{
+    font-size: 130%;
+}
+.body-para{
+    margin: 12% 5% 10%;
+    animation: ani 3s linear;
+}
+.body-para h1{
+    font-weight: bold;
+    font-size: 280%;
+    padding-bottom: 4%;
+    color: rgb(0, 0, 75);
+}

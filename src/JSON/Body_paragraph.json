@@ -1,0 +1,26 @@
+{
+    "home":{
+        "heading": "Smart Calorie",
+        "details" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maiores eaque facere perferendis architecto molestiae! Culpa, iure. Delectus magnam modi error, excepturi odio exercitationem doloribus. Nobis similique laborum optio adipisci!"
+    },
+    "recommendation":{
+        "heading" : "Recommendation",
+        "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum vitae ratione adipisci ad corrupti repellendus aspernatur vel quaerat deserunt nemo eos quis exercitationem porro dignissimos, minus ipsam blanditiis, quo odio assumenda iste at. Recusandae temporibus iure praesentium aspernatur ab, quia culpa molestiae eum omnis nam doloribus ipsum debitis fugit nulla."
+    },
+    "calculator":{
+        "heading" : "Calculator",
+        "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum vitae ratione adipisci ad corrupti repellendus aspernatur vel quaerat deserunt nemo eos quis exercitationem porro dignissimos, minus ipsam blanditiis, quo odio assumenda iste at. Recusandae temporibus iure praesentium aspernatur ab, quia culpa molestiae eum omnis nam doloribus ipsum debitis fugit nulla."
+    },
+    "analyzer":{
+        "heading" : "Analyzer",
+        "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum vitae ratione adipisci ad corrupti repellendus aspernatur vel quaerat deserunt nemo eos quis exercitationem porro dignissimos, minus ipsam blanditiis, quo odio assumenda iste at. Recusandae temporibus iure praesentium aspernatur ab, quia culpa molestiae eum omnis nam doloribus ipsum debitis fugit nulla."
+    },
+    "vitality":{
+        "heading" : "Vitality",
+        "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum vitae ratione adipisci ad corrupti repellendus aspernatur vel quaerat deserunt nemo eos quis exercitationem porro dignissimos, minus ipsam blanditiis, quo odio assumenda iste at. Recusandae temporibus iure praesentium aspernatur ab, quia culpa molestiae eum omnis nam doloribus ipsum debitis fugit nulla."
+    },
+    "insights":{
+        "heading" : "Insights",
+        "details": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum vitae ratione adipisci ad corrupti repellendus aspernatur vel quaerat deserunt nemo eos quis exercitationem porro dignissimos, minus ipsam blanditiis, quo odio assumenda iste at. Recusandae temporibus iure praesentium aspernatur ab, quia culpa molestiae eum omnis nam doloribus ipsum debitis fugit nulla."
+    }
+}

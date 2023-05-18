@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-around;
     margin : auto;
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(0, 0, 0);
     margin: auto;
     align-items: center;
 }
@@ -27,7 +27,6 @@ a{
 .f-left{
     color: white;
     display: flex;
-    align-items: center;
 }
 h2{
     font-weight: bolder;

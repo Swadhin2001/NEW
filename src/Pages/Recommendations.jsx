@@ -12,9 +12,9 @@ const Recommendations = () => {
         const api = await fetch(`https://api.spoonacular.com/recipes/random?number=8&apiKey=5b1fe8d634e547b5850d2a2d79614a9d`);
 
         const data = await api.json();
-        console.log(data);
         setRecommendation(data.recipes);
     }
+
 
     return (
         <>

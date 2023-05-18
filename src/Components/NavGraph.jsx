@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import "../CSS/homenavgraph.css";
 
-const NavGraph = () => {
+const NavGraph = (props) => {
     return (
         <div className="navgraphSection">
-            <h2 className='side-text'>Explore Variety of Features</h2>
+            {/* <h2 className='side-text'>Explore Variety of Features</h2> */}
             <div className="graph">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +240,7 @@ const NavGraph = () => {
                             <path fill="url(#pattern15)" d="M1385 408H1445V468H1385z"></path>
                             <path fill="url(#pattern16)" d="M132 733H192V793H132z"></path>
                         </g>
-                        <Link to="/Insights" className='insights link'>
+                        <Link to="/Insights" className='insights link' onMouseEnter={props.insightsIn} onMouseLeave ={props.mouseout}>
                             <path
                                 fill="url(#paint17_linear_10_122)"
                                 d="M716.661 1588.33c0 73.64-59.695 133.33-133.331 133.33S450 1661.97 450 1588.33c0-73.64 59.694-133.33 133.33-133.33 73.636 0 133.331 59.69 133.331 133.33z"
@@ -259,7 +259,7 @@ const NavGraph = () => {
                                 ></path>
                             </g>
                         </Link>
-                        <Link to="/Vitality" className='vitality link'>
+                        <Link to="/Vitality" className='vitality link' onMouseEnter={props.vitalityIn} onMouseLeave ={props.mouseout}>
                             
                             <path
                                 fill="url(#paint18_linear_10_122)"
@@ -279,7 +279,7 @@ const NavGraph = () => {
                                 ></path>
                             </g>
                         </Link>
-                        <Link to="/Calculator" className='calculator link'>
+                        <Link to="/Calculator" className='calculator link' onMouseEnter={props.calculatorIn} onMouseLeave ={props.mouseout}>
 
                             <path
                                 fill="url(#paint19_linear_10_122)"
@@ -299,8 +299,7 @@ const NavGraph = () => {
                                 ></path>
                             </g>
                         </Link>
-                        <Link to="/Analyzer" className='analyzer link'>
-
+                        <Link to="/Analyzer" className='analyzer link' onMouseEnter={props.analyserIn} onMouseLeave ={props.mouseout}>
                             <path
                                 fill="url(#paint20_linear_10_122)"
                                 d="M1282.04 610c0 73.641-59.7 133.332-133.33 133.332-73.64 0-133.33-59.691-133.33-133.332 0-73.637 59.69-133.33 133.33-133.33 73.63 0 133.33 59.693 133.33 133.33z"
@@ -319,7 +318,7 @@ const NavGraph = () => {
                                 ></path>
                             </g>
                         </Link>
-                        <Link to="/Recommendations" className='recommendations link'>
+                        <Link to="/Recommendations" className='recommendations link' onMouseEnter={props.recommendationIn} onMouseLeave ={props.mouseout}>
                             
                             <path
                                 fill="url(#paint21_linear_10_122)"

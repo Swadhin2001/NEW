@@ -7,13 +7,14 @@ import Calculator from './Pages/Calculator.jsx';
 import Vitality from './Pages/Vitality.jsx';
 import Insights from './Pages/Insights.jsx';
 import Error from './Pages/Error.jsx';
+import Home_new from './Pages/Home_new.jsx';
 
 const App = () => {
   return (
     <>
       <Router>
         <Routes>
-          <Route index Component={Home} />
+          <Route index Component={Home_new} />
           <Route exact path='/Recommendations' Component={Recommendations} />
           <Route exact path='/Analyzer' Component={Analyzer} />
           <Route exact path='/Calculator' Component={Calculator} />

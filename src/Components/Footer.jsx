@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="f-left">
-      <img src={Logo} alt="Icon" className='logo' />
+      <img src={Logo} alt="Icon" className='logo' style = {{width: "7%",marginRight:"1%"}} />
         <div className="text">
           <h2>Smart Calorie</h2>
           <p>Digital platform offering health information and services for individuals' well-being.</p>
