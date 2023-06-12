@@ -9,10 +9,18 @@ const Recommendations = () => {
     }, []);
 
     const Recommendation = async () => {
-        const api = await fetch(`https://api.spoonacular.com/recipes/random?number=8&apiKey=5b1fe8d634e547b5850d2a2d79614a9d`);
-        const data = await api.json();
-        console.log (data.recipes);
-        setRecommendation(data.recipes);
+        // For set the value in localstorage
+        var check = localStorage.getItem("popular");
+        if (check){
+            setRecommendation(JSON.parse(check));
+        }
+        else {
+            const api = await fetch(`https://api.spoonacular.com/recipes/random?number=8&apiKey=5b1fe8d634e547b5850d2a2d79614a9d`);
+            const data = await api.json();
+            check = localStorage.setItem("popular", JSON.stringify(data.recipes));
+            setRecommendation(data.recipes);
+            console.log(data.recipes);
+        }
     }
 
 
