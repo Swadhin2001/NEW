@@ -5,7 +5,7 @@ const News = () => {
   const [news,setNews] = useState([]);
 
   useEffect(()=> {
-    News ();
+    News();
   },[]);
 
   const News = async () => {
