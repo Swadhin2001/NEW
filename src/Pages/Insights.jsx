@@ -9,7 +9,11 @@ const News = () => {
   },[]);
 
   const News = async () => {
-    const api = await fetch (`https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=c1140c97f3534fdfbd27fb36967a86a9`);
+    const api = await fetch (`https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=c1140c97f3534fdfbd27fb36967a86a9`,{
+      headers: {
+        'User-Agent': 'PostmanRuntime/7.32.2'
+      }
+    });
 
     const data = await api.json();
     setNews(data.articles);
